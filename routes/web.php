@@ -14,4 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [MainController::class, 'home']);
+Route::get('/', [MainController::class, 'redirect']);
+Route::get('/home', [MainController::class, 'home'])->name('home');
+Route::get('/todolist', [MainController::class, 'todolist']);
