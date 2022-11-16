@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Loutchoadmin - Home</title>
+    <title>Loutchoadmin - About</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
@@ -62,29 +62,19 @@
           </ul>
         </nav>
     </header>
-    
-    <div class="w-full mt-20 animate__animated animate__bounceInDown">
-      <div class="text-2xl flex-justify-center">
-        <h1 class="text-center textcolor font-bold text-6xl">Loutcho_Q - Louis</h1>
-        <h1 class="text-center font-semibold mt-2 text-4xl">Future developper</h1>
-        <div class="mx-96">
-          <h1 class="text-center font-semibold mt-2 text-lg">Passionated of creating new stuff, i wanna live a better life with coding, meet people and work on big projects to be the future.</h1>
+    <div class="w-full flex justify-center">
+        <div class="flex justify-center w-5/12">
+            <div class="mt-14">
+                <div class="">
+                    <h1 class="textcolor text-5xl font-bold text-center">About me :</h1>
+                    <div class="inline-block">
+                        <h1 class="font-semibold mt-4 text-center">I'm a young optimistic developper as you already know and i wanted to create a website that i could use for both a Portfolio and a Todolist for my next projects.</h1>
+                        <h1 class="font-semibold mt-2 text-center">This website will be updated as long as i'm in web developpement.</h1>
+                        <h1 class="font-semibold mt-2 text-center">Get the code of this website here :</h1>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="flex justify-center mt-6">
-        <div class="inline-block">
-          <div class="flex justify-center">
-
-            <a href="https://github.com/loutchoo">
-              <img class="" src="{{asset('images/github.png')}}" height="50" width="50" alt="">
-        </a>
-        <a class="ml-6" href="https://twitter.com/loutchoesport">
-          <img class="" src="{{asset('images/twitter.png')}}" height="50" width="50" alt="">
-        </a>
-        <div>
-        </div>
-      </div>
-      </div>
     </div>
 </body>
 </html>

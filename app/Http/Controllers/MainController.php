@@ -18,4 +18,12 @@ class MainController extends Controller
     public function todolist(){
         return view('todolist');
     }
+
+    public function about(){
+        return view('about');
+    }
+
+    public function projects(){
+        return view('projects');
+    }
 }

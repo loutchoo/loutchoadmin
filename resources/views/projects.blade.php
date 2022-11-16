@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Loutchoadmin - Home</title>
+    <title>Loutchoadmin - Projects</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
@@ -62,29 +62,5 @@
           </ul>
         </nav>
     </header>
-    
-    <div class="w-full mt-20 animate__animated animate__bounceInDown">
-      <div class="text-2xl flex-justify-center">
-        <h1 class="text-center textcolor font-bold text-6xl">Loutcho_Q - Louis</h1>
-        <h1 class="text-center font-semibold mt-2 text-4xl">Future developper</h1>
-        <div class="mx-96">
-          <h1 class="text-center font-semibold mt-2 text-lg">Passionated of creating new stuff, i wanna live a better life with coding, meet people and work on big projects to be the future.</h1>
-        </div>
-      </div>
-      <div class="flex justify-center mt-6">
-        <div class="inline-block">
-          <div class="flex justify-center">
-
-            <a href="https://github.com/loutchoo">
-              <img class="" src="{{asset('images/github.png')}}" height="50" width="50" alt="">
-        </a>
-        <a class="ml-6" href="https://twitter.com/loutchoesport">
-          <img class="" src="{{asset('images/twitter.png')}}" height="50" width="50" alt="">
-        </a>
-        <div>
-        </div>
-      </div>
-      </div>
-    </div>
 </body>
 </html>

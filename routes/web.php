@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [MainController::class, 'redirect']);
 Route::get('/home', [MainController::class, 'home'])->name('home');
 Route::get('/todolist', [MainController::class, 'todolist']);
+Route::get('/about', [MainController::class, 'about']);
+Route::get('/projects', [MainController::class, 'projects']);
+
+Route::get('/login', [LoginController::class, 'login']);

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr  ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Loutchoadmin - Home</title>
+    <title>Loutchoadmin - Login</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
@@ -14,6 +14,9 @@
   }
   .bgcolor{
     background-color: #182235;
+  }
+  .bordercolor{
+    border-color: #00EAB1;;
   }
 </style>
 
@@ -62,29 +65,22 @@
           </ul>
         </nav>
     </header>
-    
-    <div class="w-full mt-20 animate__animated animate__bounceInDown">
-      <div class="text-2xl flex-justify-center">
-        <h1 class="text-center textcolor font-bold text-6xl">Loutcho_Q - Louis</h1>
-        <h1 class="text-center font-semibold mt-2 text-4xl">Future developper</h1>
-        <div class="mx-96">
-          <h1 class="text-center font-semibold mt-2 text-lg">Passionated of creating new stuff, i wanna live a better life with coding, meet people and work on big projects to be the future.</h1>
+    <div class="mt-14 flex justify-center animate__animated animate__bounceInDown">
+        <div class="w-1/3">
+            <div class="bgcolor border-4 bordercolor flex justify-center rounded-lg">
+                <div class="inline-block mt-8">
+                    <div class="mt-4">
+                        <h1 class="font-bold text-5xl text-center textcolor">Sign in</h1>
+                    <input class="block border-4 border-black bg-white rounded-lg p-2 font-semibold mt-8 text-black" type="text" placeholder="Username">
+                    <input class="block border-4 border-black bg-white mt-6 rounded-lg p-2 font-semibold text-black" type="text" placeholder="Password">
+                    <div class="flex justify-center">
+                    <button class="block bg-white text-black font-semibold border-black border-4 rounded-full p-2 px-4 mt-6 hover:opacity-75">Login</button>
+                </div>
+                <div class="mb-14"></div>
+                </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="flex justify-center mt-6">
-        <div class="inline-block">
-          <div class="flex justify-center">
-
-            <a href="https://github.com/loutchoo">
-              <img class="" src="{{asset('images/github.png')}}" height="50" width="50" alt="">
-        </a>
-        <a class="ml-6" href="https://twitter.com/loutchoesport">
-          <img class="" src="{{asset('images/twitter.png')}}" height="50" width="50" alt="">
-        </a>
-        <div>
-        </div>
-      </div>
-      </div>
     </div>
 </body>
 </html>
