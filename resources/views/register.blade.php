@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Loutchoadmin - Login</title>
+    <title>Loutchoadmin - Register</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
@@ -74,8 +74,8 @@
             <div class="bgcolor border-4 bordercolor flex justify-center rounded-lg">
                 <div class="inline-block mt-8">
                     <div class="mt-4">
-                        <h1 class="font-bold text-5xl text-center textcolor">Sign in</h1>
-                        <form method="POST" action="{{ route('login') }}">
+                        <h1 class="font-bold text-5xl text-center textcolor">Register</h1>
+                        <form action="{{route('register')}}" method="POST">
                             @csrf
                             <input
                                 class="block border-4 border-black bg-white rounded-lg p-2 font-semibold mt-8 text-black"
@@ -83,11 +83,11 @@
                             <input
                                 class="block border-4 border-black bg-white mt-6 rounded-lg p-2 font-semibold text-black"
                                 type="password" placeholder="Password" name="password">
-                        <div class="flex justify-center">
-                            <button
-                                type="submit" class="block bg-white text-black font-semibold border-black border-4 rounded-full p-2 px-4 mt-6 hover:opacity-75">Login</button>
-                            </form>
-                        </div>
+                            <div class="flex justify-center">
+                                <button
+                                    type="submit" class="block bg-white text-black font-semibold border-black border-4 rounded-full p-2 px-4 mt-6 hover:opacity-75">Register</button>
+                            </div>
+                        </form>
                         <div class="mb-14"></div>
                     </div>
                 </div>

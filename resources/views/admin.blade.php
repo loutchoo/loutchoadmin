@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Loutchoadmin - Projects</title>
+    <title>Loutchoadmin - Admin</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
@@ -66,5 +66,9 @@
           </ul>
         </nav>
     </header>
+    <div>
+      <h1 class="font-semibold text-5xl text-center mt-10">Profile :</h1>
+      <h1 class="font-semibold text-2xl text-center mt-4">Username : {{$user['name']}}</h1>
+    </div>
 </body>
 </html>

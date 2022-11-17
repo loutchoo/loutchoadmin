@@ -55,9 +55,13 @@
         <nav>
           <ul>
             <li>
+              @if (Auth::check())
+              <a class="rounded-full px-3 py-2 bg-white font-semibold flex items-center group" href="/logout">
+                <span class="text-black">Logout</span></a>
+              @else
               <a class="rounded-full px-3 py-2 bg-white font-semibold flex items-center group" href="/login">
-              <span class="text-black">Sign in</span>
-              </a>
+              <span class="text-black">Sign in</span></a>
+              @endif
             </li>
           </ul>
         </nav>

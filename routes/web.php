@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
@@ -21,4 +22,12 @@ Route::get('/todolist', [MainController::class, 'todolist']);
 Route::get('/about', [MainController::class, 'about']);
 Route::get('/projects', [MainController::class, 'projects']);
 
-Route::get('/login', [LoginController::class, 'login']);
+Route::get('/admin', [AdminController::class, 'admin']);
+
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/login', [LoginController::class, 'connect']);
+
+Route::get('/register', [LoginController::class, 'register'])->name('register');
+Route::post('/register', [LoginController::class, 'store']);
+
+Route::get('/logout', [LoginController::class, 'logout']);
