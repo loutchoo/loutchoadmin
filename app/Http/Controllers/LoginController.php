@@ -34,6 +34,9 @@ class LoginController extends Controller
     }
 
     public function register(){
+        if (Auth::check()) {
+            return redirect()->route('home');
+        }
         return view('register');
     }
 
