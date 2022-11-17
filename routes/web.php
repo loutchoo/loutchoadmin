@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MainController;
@@ -21,6 +22,8 @@ Route::get('/home', [MainController::class, 'home'])->name('home');
 Route::get('/todolist', [MainController::class, 'todolist']);
 Route::get('/about', [MainController::class, 'about']);
 Route::get('/projects', [MainController::class, 'projects']);
+
+Route::get('/createactivity', [ActivityController::class, 'home']);
 
 Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
 Route::post('/admin', [AdminController::class, 'changepassword']);

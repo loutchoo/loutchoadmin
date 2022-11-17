@@ -62,7 +62,7 @@
               @if (Auth::check())
               <div class="flex justify-center">
               <a class="rounded-full px-3 py-2 bg-white font-semibold sm:flex items-center group" href="/logout">
-                <span class="text-black">Logout</span></a>
+                <span class="text-red-600">Logout</span></a>
               </div>
               @else
               <div class="flex justify-center">
