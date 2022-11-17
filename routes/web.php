@@ -24,6 +24,10 @@ Route::get('/about', [MainController::class, 'about']);
 Route::get('/projects', [MainController::class, 'projects']);
 
 Route::get('/createactivity', [ActivityController::class, 'home']);
+Route::post('/createactivity', [ActivityController::class, 'store']);
+
+Route::prefix('showactivity')->group(function() {
+Route::get('/{id}', [ActivityController::class, 'show']);});
 
 Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
 Route::post('/admin', [AdminController::class, 'changepassword']);

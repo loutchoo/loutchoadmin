@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr  ">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Loutchoadmin - Create an activity</title>
+    <title>Loutchoadmin - Activity</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
@@ -18,8 +18,8 @@
         background-color: #182235;
     }
 
-    ::placeholder {
-        color: red;
+    .under {
+        text-decoration: underline;
     }
 </style>
 
@@ -77,43 +77,25 @@
             </ul>
         </nav>
     </header>
-    <h1 class="text-4xl font-semibold text-center mt-2 animate__animated animate__bounceInDown">Create an activity for your Todolist :</h1>
-    <div class="flex justify-center mt-4 animate__animated animate__bounceInDown">
-        <div>
-            <div class="inline-block">
-                <form action="" method="POST">
-                    @csrf
-                <label class="block font-semibold" for="pet-select">Choose a language :</label>
-                <select class="text-black" name="language" id="language">
-                    <option class="text-black" value="">--Please choose a language--</option>
-                    <option value="Laravel">Laravel</option>
-                    <option value="Javascript">Javascript</option>
-                    <option value="Python">Python</option>
-                </select>
-                <div class="flex justify-center mt-4">
-                    <div class="inline-block">
-                        <label class="text-white font-semibold" for="title">Title :</label>
-                        <input name="title" class="block rounded-lg text-black px-2" type="text" size="25"
-                            placeholder="Name of the future activity">
-                    </div>
+    <div>
+        <h1 class="text-center font-semibold text-4xl mt-8 textcolor">Here is one of your activities :</h1>
+    </div>
+
+    <div class="w-full flex justify-center mt-6">
+        <div class="w-9/12 border-4 border-white rounded-lg text-xl">
+            <div>
+                <h1 class="font-semibold mt-4 ml-6 textcolor">Activity of Loutcho_Q</h1>
+                <h1 class="font-semibold mt-1 ml-6 text-red-600">Date of creation : {{ $activity->created_at }}</h1>
+                <div class="flex justify-center">
+                    <h1 class="font-semibold text-3xl mt-8">Title of the activity : </h1>
+                    <h1 class="mt-8 text-3xl font-semibold ml-1 under"> {{ $activity->title }}</h1>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="flex justify-center mt-4 animate__animated animate__bounceInDown">
-        <div class="inline-block">
-            <label class="text-white font-semibold" for="description">Description :</label>
-            <textarea rows="9" cols="40" name="description" class="block rounded-md text-black px-2 pt-1" type="text"
-                placeholder="Description of the activity"></textarea>
-            <div class="flex justify-center mt-8">
-                <button type="submit" class="p-2 bg-green-600 border-green-700 border-4 rounded-md hover:opacity-75">Add to ToDoList</button>
-            </form>
-            </div>
             <div>
-                @if(session('success'))
-                  <h1 class="text-center font-semibold block mt-2">{{session('success')}}</h1>
-                  @endif
-              </div>
+              <h1 class="font-semibold text-3xl mt-8 ml-10">Description :</h1>
+              <h1 class="mx-20 font-lg mt-4 text-xl">{{$activity->description}}.</h1>
+            </div>
+            <div class="pb-80"></div>
         </div>
     </div>
 </body>
