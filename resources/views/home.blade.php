@@ -75,7 +75,7 @@
         </nav>
     </header>
     
-    <div class="w-full mt-14 sm:mt-20 animate__animated animate__bounceInDown">
+    <div class="w-full mt-6 sm:mt-20 animate__animated animate__bounceInDown">
       <div class="text-2xl flex-justify-center">
         <h1 class="text-center textcolor font-bold sm:text-6xl">Loutcho_Q - Louis</h1>
         <h1 class="text-center font-semibold mt-2 text-4xl">Future developper</h1>
