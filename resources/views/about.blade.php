@@ -19,7 +19,11 @@
 
 <body class="bgcolor text-white text-lg">
     <header class="container mx-auto px-4 py-6 flex items-center justify-between  ">
-        <a href="/" class="font-bold text-white text-xl">LoutchoAdmin</a>
+      <div class="flex">
+        <a href="/">
+        <img class="rounded-lg border-2 border-black" src="{{asset('images/ohnocringe.jpeg')}}" height="50" width="50" alt=""></a>
+          <a href="/" class="font-bold text-white text-xl mt-2 ml-2">LoutchoAdmin</a>
+        </div>
         <nav>
           <ul class="flex items-center justify-center font-semibold mx-10">
             <li class="relative px-3 py-2">
@@ -75,6 +79,11 @@
                         <h1 class="font-semibold mt-4 text-center">I'm a young optimistic developper as you already know and i wanted to create a website that i could use for both a Portfolio and a Todolist for my next projects.</h1>
                         <h1 class="font-semibold mt-2 text-center">This website will be updated as long as i'm in web developpement.</h1>
                         <h1 class="font-semibold mt-2 text-center">Get the code of this website here :</h1>
+                        <div class="flex justify-center mt-2">
+                        <a href="https://github.com/loutchoo/loutchoadmin">
+                          <img class="" src="{{asset('images/github.png')}}" height="50" width="50" alt="">
+                    </a>
+                  </div>
                     </div>
                 </div>
             </div>

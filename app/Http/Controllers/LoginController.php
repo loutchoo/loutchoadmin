@@ -26,7 +26,7 @@ class LoginController extends Controller
             'password' => $request['password']
         ];
         if(Auth::attempt($usercredentials)){
-            return redirect('/home');
+            return redirect('/admin');
         }
         else{
             return back()->with('error', 'Mauvais données de connexions');

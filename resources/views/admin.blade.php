@@ -18,8 +18,12 @@
 </style>
 
 <body class="bgcolor text-white text-lg">
-    <header class="container mx-auto px-4 py-6 flex items-center justify-between  ">
-        <a href="/" class="font-bold text-white text-xl">LoutchoAdmin</a>
+    <header class="container mx-auto px-4 py-6 flex items-center justify-between">
+      <div class="flex">
+      <a href="/">
+      <img class="rounded-lg border-2 border-black" src="{{asset('images/ohnocringe.jpeg')}}" height="50" width="50" alt=""></a>
+        <a href="/" class="font-bold text-white text-xl mt-2 ml-2">LoutchoAdmin</a>
+      </div>
         <nav>
           <ul class="flex items-center justify-center font-semibold mx-10">
             <li class="relative px-3 py-2">
@@ -69,6 +73,26 @@
     <div>
       <h1 class="font-semibold text-5xl text-center mt-10">Profile :</h1>
       <h1 class="font-semibold text-2xl text-center mt-4">Username : {{$user['name']}}</h1>
+    </div>
+    <div class="flex justify-center">
+      <div class="inline-block">
+      <h1 class="block mt-8 text-center">Change password :</h1>
+      <form action="{{route('admin')}}" method="POST">
+        @csrf
+        <input class="p-2 border-2 border-black rounded-lg block mt-2 text-black" type="password" placeholder="New password" name="newpassword">
+        <input class="p-2 border-2 border-black rounded-lg block mt-4 text-black" type="password" placeholder="New password" name="newpassword2">
+        <div class="flex justify-center mt-2">
+        <button type="submit" class="p-2 rounded-lg bg-black text-white font-semibold block">Change</button>
+        </div>
+      </div>
+      </form>
+    </div>
+    <div>
+      @if(session('status'))
+        <h1 class="text-center font-semibold block">{{session('status')}}</h1>
+        @elseif (session('error'))
+        <h1 class="text-center font-semibold block">{{session('error')}}</h1>
+        @endif
     </div>
 </body>
 </html>

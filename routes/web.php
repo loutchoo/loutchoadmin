@@ -22,7 +22,8 @@ Route::get('/todolist', [MainController::class, 'todolist']);
 Route::get('/about', [MainController::class, 'about']);
 Route::get('/projects', [MainController::class, 'projects']);
 
-Route::get('/admin', [AdminController::class, 'admin']);
+Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
+Route::post('/admin', [AdminController::class, 'changepassword']);
 
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/login', [LoginController::class, 'connect']);

@@ -26,7 +26,11 @@
 
 <body class="bgcolor text-white text-lg">
     <header class="container mx-auto px-4 py-6 flex items-center justify-between  ">
-        <a href="/" class="font-bold text-white text-xl">LoutchoAdmin</a>
+        <div class="flex">
+            <a href="/">
+            <img class="rounded-lg border-2 border-black" src="{{asset('images/ohnocringe.jpeg')}}" height="50" width="50" alt=""></a>
+              <a href="/" class="font-bold text-white text-xl mt-2 ml-2">LoutchoAdmin</a>
+            </div>
         <nav>
             <ul class="flex items-center justify-center font-semibold mx-10">
                 <li class="relative px-3 py-2">
