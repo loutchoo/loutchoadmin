@@ -74,7 +74,7 @@
         </ul>
       </nav>
   </header>
-    <div class="w-full flex justify-center">
+    <div class="w-full flex justify-center animate__animated animate__bounceInDown">
         <div class="flex justify-center sm:mx-0 mx-4 sm:w-5/12">
             <div class="mt-14">
                 <div class="">

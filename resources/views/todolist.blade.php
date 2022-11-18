@@ -29,7 +29,7 @@
             <li class="relative px-3 py-2">
               <a href="/home">
               <div class="bg-white rounded-full text-white p-3 bg-opacity-5">
-                <span class="hover:opacity-50 cursor-default">Homee</span>
+                <span class="hover:opacity-50 cursor-default">Home</span>
               </div>
             </a>
             </li>
