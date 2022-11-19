@@ -29,35 +29,35 @@
         <div class="flex">
             <a href="/">
             <img class="rounded-lg border-2 border-black" src="{{asset('images/ohnocringe.jpeg')}}" height="50" width="50" alt=""></a>
-              <a href="/" class="font-bold text-white text-xl mt-2 ml-2">LoutchoAdmin</a>
+              <a href="/" class="font-bold text-white text-xl mt-2 ml-2">LoutchoDev</a>
             </div>
         <nav>
             <ul class="flex items-center justify-center font-semibold mx-10">
                 <li class="relative px-3 py-2">
                     <a href="/home">
                         <div class="bg-white rounded-full text-white p-3 bg-opacity-5">
-                            <span class="hover:opacity-50 cursor-default">Home</span>
+                            <span class="hover:opacity-50 cursor-default hover:text-green-400">Home</span>
                         </div>
                     </a>
                 </li>
                 <li class="relative px-3 py-2">
                     <a href="/todolist">
                         <div class="bg-white rounded-full text-white p-3 bg-opacity-5">
-                            <span class="hover:opacity-50 cursor-default">Todolist</span>
+                            <span class="hover:opacity-50 cursor-default hover:text-green-400">Todolist</span>
                         </div>
                     </a>
                 </li>
                 <li class="relative px-3 py-2">
                     <a href="/projects">
                         <div class="bg-white rounded-full text-white p-3 bg-opacity-5">
-                            <span class="hover:opacity-50 cursor-default">Projects</span>
+                            <span class="hover:opacity-50 cursor-default hover:text-green-400">Projects</span>
                         </div>
                     </a>
                 </li>
                 <li class="relative px-3 py-2">
                     <a href="/about">
                         <div class="bg-white rounded-full text-white p-3 bg-opacity-5">
-                            <span class="hover:opacity-50 cursor-default">About</span>
+                            <span class="hover:opacity-50 cursor-default hover:text-green-400">About</span>
                         </div>
                     </a>
                 </li>
