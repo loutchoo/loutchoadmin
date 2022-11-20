@@ -19,67 +19,70 @@
     }
 </style>
 
-<body class="bgcolor text-white text-lg">
-    <header class="container mx-auto px-4 py-6 flex items-center justify-between  ">
-        <div class="flex">
-            <a href="/">
-                <img class="rounded-lg border-2 border-green-600" src="{{ asset('images/ohnocringe.jpeg') }}"
-                    height="50" width="50" alt=""></a>
-            <a href="/" class="font-bold text-white text-xl mt-2 ml-2">LoutchoDev</a>
-        </div>
-        <nav>
+<body class="bgcolor text-white sm:text-lg">
+    <header class="container mx-auto px-4 py-6 sm:flex sm:items-center sm:justify-between  ">
+        <div class="flex justify-center">
+          <a href="/">
+          <img class="rounded-lg border-2 border-green-600" src="{{asset('images/ohnocringe.jpeg')}}" height="50" width="50" alt=""></a>
+            <a href="/" class="font-bold text-white text-sm sm:text-xl mt-4 sm:mt-2 ml-2">LoutchoDev</a>
+          </div>
+          <nav class="mt-2 sm:mt-0">
             <ul class="flex items-center justify-center font-semibold mx-10">
-                <li class="relative px-3 py-2">
-                    <a href="/home">
-                        <div class="bg-white rounded-full text-white p-3 bg-opacity-5">
-                            <span class="hover:opacity-50 cursor-default hover:text-green-400">Home</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="relative px-3 py-2">
-                    <a href="/todolist">
-                        <div class="bg-white rounded-full text-white p-3 bg-opacity-5">
-                            <span class="hover:opacity-50 cursor-default hover:text-green-400">Todolist</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="relative px-3 py-2">
-                    <a href="/projects">
-                        <div class="bg-white rounded-full text-white p-3 bg-opacity-5">
-                            <span class="hover:opacity-50 cursor-default hover:text-green-400">Projects</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="relative px-3 py-2">
-                    <a href="/about">
-                        <div class="bg-white rounded-full text-white p-3 bg-opacity-5">
-                            <span class="hover:opacity-50 cursor-default hover:text-green-400">About</span>
-                        </div>
-                    </a>
-                </li>
+              <li class="relative px-3 py-2">
+                <a href="/home">
+                <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5">
+                  <span class="hover:opacity-50 cursor-default hover:text-green-400">Home</span>
+                </div>
+              </a>
+              </li>
+              <li class="relative px-3 py-2">
+                <a href="/todolist">
+                  <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5">
+                    <span class="hover:opacity-50 cursor-default hover:text-green-400">Todolist</span>
+                </div>
+                </a>
+              </li>
+              <li class="relative px-3 py-2">
+                <a href="/projects">
+                <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5">
+                  <span class="hover:opacity-50 cursor-default hover:text-green-400">Projects</span>
+                </div>
+              </a>
+              </li>
+              <li class="relative px-3 py-2">
+                <a href="/about">
+                <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5 cursor-defaul">
+                  <span class="hover:opacity-50 cursor-default hover:text-green-400">About</span>
+                </div>
+              </a>
+              </li>
             </ul>
-        </nav>
-        <nav>
+          </nav>
+          <nav>
             <ul>
-                <li>
-                    @if (Auth::check())
-                        <a class="rounded-full px-3 py-2 bg-white font-semibold flex items-center group" href="/logout">
-                            <span class="text-red-600">Logout</span></a>
-                    @else
-                        <a class="rounded-full px-3 py-2 bg-white font-semibold flex items-center group" href="/login">
-                            <span class="text-black">Sign in</span></a>
-                    @endif
-                </li>
+              <li>
+                @if (Auth::check())
+                <div class="flex justify-center">
+                <a class="rounded-full px-3 py-2 bg-white font-semibold sm:flex items-center group" href="/logout">
+                  <span class="text-red-600">Logout</span></a>
+                </div>
+                @else
+                <div class="flex justify-center">
+                <a class="rounded-full px-3 py-2 bg-white font-semibold sm:flex items-center group" href="/login">
+                <span class="text-black">Sign in</span></a>
+              </div>
+                @endif
+              </li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+      </header>
     <div class="flex justify-center">
         <div class="animate__animated animate__bounceInDown">
             <div class="">
                 <h1 class="font-semibold text-4xl text-center">Projects :</h1>
             </div>
-            <div class="flex justify-between mt-1">
-                <div class="border-2 border-gray-300 rounded-lg mt-4 p-4">
+            <div class="sm:flex sm:justify-between mt-1">
+                <div class="sm:border-2 border-y-2 border-b-2 border-gray-300 sm:rounded-lg mt-4 p-4">
                     <div class="flex justify-center">
                         <h1 class="text-2xl font-semibold text-center mt-2">FaceitEloDoge</h1>
                         <a class="ml-1" href="https://github.com/loutchoo/FaceitEloDoge">
@@ -119,7 +122,7 @@
 
                 
 
-                <div class="border-2 border-gray-300 rounded-lg mt-4 p-4 ml-10">
+                <div class="sm:border-2 border-y-2 border-b-2 border-gray-300 sm:rounded-lg mt-4 p-4 sm:ml-10">
                     <div class="flex justify-center">
                         <h1 class="text-2xl font-semibold text-center mt-2">Evilscreen</h1>
                         <a class="ml-1" href="https://github.com/loutchoo/evilscreen">
@@ -159,6 +162,8 @@
             </div>
         </div>
     </div>
+    <div class="sm:pb-0 pb-10"></div>
+    
 </body>
 
 </html>
