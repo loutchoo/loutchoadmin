@@ -92,21 +92,21 @@
                     </div>
                     <div class="flex justify-between font-semibold">
                         <div class="">
-                            <h1 class="hover:text-gray-300">Technology : Web</h1>
+                            <h1 class="hover:text-gray-300 sm:text-lg text-xs">Technology : Web</h1>
                             <div class="flex justify-center mt-1">
                                 <img class="" src="{{ asset('images/web2.png') }}" height="50" width="50"
                                     alt="">
                             </div>
                         </div>
                         <div class="ml-2">
-                            <h1 class="hover:text-blue-400">Language : PHP</h1>
+                            <h1 class="hover:text-blue-400 sm:text-lg text-xs">Language : PHP</h1>
                             <div class="flex justify-center mt-2">
                                 <img class="" src="{{ asset('images/php.webp') }}" height="50" width="50"
                                     alt="">
                             </div>
                         </div>
                         <div class="ml-2">
-                            <h1 class="hover:text-red-500">Framework : Laravel</h1>
+                            <h1 class="hover:text-red-500 sm:text-lg text-xs">Framework : Laravel</h1>
                             <div class="flex justify-center">
                                 <img class="" src="{{ asset('images/laravel.png') }}" height="50"
                                     width="50" alt="">
@@ -132,21 +132,21 @@
                     </div>
                     <div class="flex justify-between font-semibold">
                         <div>
-                            <h1 class="hover:text-gray-300">Technology : Software</h1>
+                            <h1 class="hover:text-gray-300 sm:text-lg text-xs">Technology : Software</h1>
                             <div class="flex justify-center">
                                 <img class="" src="{{ asset('images/software.png') }}" height="50" width="50"
                                     alt="">
                             </div>
                         </div>
-                        <div class="ml-4">
-                            <h1 class="hover:text-yellow-300">Language : Python</h1>
+                        <div class="ml-1 sm:ml-4">
+                            <h1 class="hover:text-yellow-300 sm:text-lg text-xs">Language : Python</h1>
                             <div class="flex justify-center mt-1">
                                 <img class="" src="{{ asset('images/python.png') }}" height="50" width="50"
                                     alt="">
                             </div>
                         </div>
-                        <div class="ml-4">
-                            <h1 class="hover:text-orange-600">Package : Tkinter</h1>
+                        <div class="ml-2 sm:ml-4">
+                            <h1 class="hover:text-orange-600 sm:text-lg text-xs">Package : Tkinter</h1>
                             <div class="flex justify-center mt-1">
                                 <img class="" src="{{ asset('images/tkinter.png') }}" height="25"
                                     width="25" alt="">
