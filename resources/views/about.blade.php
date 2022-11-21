@@ -85,7 +85,7 @@
     </header>
     <div class="w-full flex justify-center animate__animated animate__bounceInDown">
         <div class="flex justify-center sm:mx-0 mx-4 sm:w-5/12">
-            <div class="mt-4">
+            <div class="sm:mt-4 mt-2">
                 <div class="">
                     <h1 class="textcolor sm:text-5xl font-bold text-center">About me :</h1>
                     <div class="inline-block">
@@ -118,6 +118,7 @@
             </div>
         </div>
     </div>
+    <div class="pb-40"></div>
 </body>
 
 </html>
