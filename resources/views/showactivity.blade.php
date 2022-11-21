@@ -29,7 +29,7 @@
             <a href="/">
                 <img class="rounded-lg border-2 border-green-600" src="{{ asset('images/ohnocringe.jpeg') }}"
                     height="50" width="50" alt=""></a>
-            <a href="/" class="font-bold text-white text-xl mt-2 ml-2">LoutchoDev</a>
+            <a href="/" class="font-bold text-white text-lg sm:text-xl mt-2 ml-2">LoutchoDev</a>
         </div>
         <nav>
             <ul class="flex items-center justify-center font-semibold mx-10">
