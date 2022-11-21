@@ -31,28 +31,32 @@
             <ul class="flex items-center justify-center font-semibold mx-10">
                 <li class="relative sm:px-3 px-2 py-2">
                     <a href="/home">
-                        <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
                             <span class="hover:opacity-50 hover:text-green-400">Home</span>
                         </div>
                     </a>
                 </li>
                 <li class="relative sm:px-3 px-2 py-2">
                     <a href="/todolist">
-                        <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
                             <span class="hover:opacity-50 hover:text-green-400">Todolist</span>
                         </div>
                     </a>
                 </li>
                 <li class="relative sm:px-3 px-2 py-2">
                     <a href="/projects">
-                        <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
                             <span class="hover:opacity-50 hover:text-green-400">Projects</span>
                         </div>
                     </a>
                 </li>
                 <li class="relative sm:px-3 px-2 py-2">
                     <a href="/about">
-                        <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
                             <span class="hover:opacity-50 hover:text-green-400">About</span>
                         </div>
                     </a>
@@ -101,9 +105,14 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="flex justify-center">
+                            <img class="rounded-lg border-2 border-green-600 mt-2"
+                                src="{{ asset('images/ohnocringe.jpeg') }}" height="100" width="150"
+                                alt="">
+                        </div>
                         <div class="flex justify-center font-semibold mt-2">
-                          <h1 class="text-pink-600">Made with heart & Laravel & Tailwind.</h1>
-                      </div>
+                            <h1 class="text-pink-600">Made with heart & Laravel & Tailwind.</h1>
+                        </div>
                     </div>
                 </div>
             </div>

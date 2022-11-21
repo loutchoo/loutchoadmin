@@ -22,60 +22,67 @@
 <body class="bgcolor text-white sm:text-lg">
     <header class="container mx-auto px-4 py-6 sm:flex sm:items-center sm:justify-between  ">
         <div class="flex justify-center">
-          <a href="/">
-          <img class="rounded-lg border-2 border-green-600" src="{{asset('images/ohnocringe.jpeg')}}" height="50" width="50" alt=""></a>
+            <a href="/">
+                <img class="rounded-lg border-2 border-green-600" src="{{ asset('images/ohnocringe.jpeg') }}"
+                    height="50" width="50" alt=""></a>
             <a href="/" class="font-bold text-white text-sm sm:text-xl mt-4 sm:mt-2 ml-2">LoutchoDev</a>
-          </div>
-          <nav class="mt-2 sm:mt-0">
+        </div>
+        <nav class="mt-2 sm:mt-0">
             <ul class="flex items-center justify-center font-semibold mx-10">
-              <li class="relative sm:px-3 px-2 py-2">
-                <a href="/home">
-                <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
-                  <span class="hover:opacity-50 hover:text-green-400">Home</span>
-                </div>
-              </a>
-              </li>
-              <li class="relative sm:px-3 px-2 py-2">
-                <a href="/todolist">
-                  <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
-                    <span class="hover:opacity-50 hover:text-green-400">Todolist</span>
-                </div>
-                </a>
-              </li>
-              <li class="relative sm:px-3 px-2 py-2">
-                <a href="/projects">
-                <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
-                  <span class="hover:opacity-50 hover:text-green-400">Projects</span>
-                </div>
-              </a>
-              </li>
-              <li class="relative sm:px-3 px-2 py-2">
-                <a href="/about">
-                <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
-                  <span class="hover:opacity-50 hover:text-green-400">About</span>
-                </div>
-              </a>
-              </li>
+                <li class="relative sm:px-3 px-2 py-2">
+                    <a href="/home">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                            <span class="hover:opacity-50 hover:text-green-400">Home</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="relative sm:px-3 px-2 py-2">
+                    <a href="/todolist">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                            <span class="hover:opacity-50 hover:text-green-400">Todolist</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="relative sm:px-3 px-2 py-2">
+                    <a href="/projects">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                            <span class="hover:opacity-50 hover:text-green-400">Projects</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="relative sm:px-3 px-2 py-2">
+                    <a href="/about">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                            <span class="hover:opacity-50 hover:text-green-400">About</span>
+                        </div>
+                    </a>
+                </li>
             </ul>
-          </nav>
-          <nav>
+        </nav>
+        <nav>
             <ul>
-              <li>
-                @if (Auth::check())
-                <div class="flex justify-center">
-                <a class="rounded-full px-3 py-2 bg-white font-semibold sm:flex items-center group" href="/logout">
-                  <span class="text-red-600">Logout</span></a>
-                </div>
-                @else
-                <div class="flex justify-center">
-                <a class="rounded-full px-3 py-2 bg-white font-semibold sm:flex items-center group" href="/login">
-                <span class="text-black">Sign in</span></a>
-              </div>
-                @endif
-              </li>
+                <li>
+                    @if (Auth::check())
+                        <div class="flex justify-center">
+                            <a class="rounded-full px-3 py-2 bg-white font-semibold sm:flex items-center group"
+                                href="/logout">
+                                <span class="text-red-600">Logout</span></a>
+                        </div>
+                    @else
+                        <div class="flex justify-center">
+                            <a class="rounded-full px-3 py-2 bg-white font-semibold sm:flex items-center group"
+                                href="/login">
+                                <span class="text-black">Sign in</span></a>
+                        </div>
+                    @endif
+                </li>
             </ul>
-          </nav>
-      </header>
+        </nav>
+    </header>
     <div class="flex justify-center">
         <div class="animate__animated animate__bounceInDown">
             <div class="">
@@ -114,13 +121,12 @@
                         </div>
                     </div>
                     <div class="flex justify-center">
-                    <img class="mt-2 rounded-lg border border-black"
-                        src="{{asset('images/faceitelo2.png')}}"
-                        height="500" width="500" alt="">
+                        <img class="mt-2 rounded-lg border border-black" src="{{ asset('images/faceitelo2.png') }}"
+                            height="500" width="500" alt="">
                     </div>
                 </div>
 
-                
+
 
                 <div class="sm:border-4 border-b-2 border-green-400 sm:rounded-lg mt-4 p-4 sm:ml-10">
                     <div class="flex justify-center">
@@ -134,15 +140,15 @@
                         <div>
                             <h1 class="hover:text-gray-300 sm:text-lg text-xs">Technology : Software</h1>
                             <div class="flex justify-center">
-                                <img class="" src="{{ asset('images/software.png') }}" height="50" width="50"
-                                    alt="">
+                                <img class="" src="{{ asset('images/software.png') }}" height="50"
+                                    width="50" alt="">
                             </div>
                         </div>
                         <div class="sm:ml-4">
                             <h1 class="hover:text-yellow-300 sm:text-lg text-xs">Language : Python</h1>
                             <div class="flex justify-center mt-1">
-                                <img class="" src="{{ asset('images/python.png') }}" height="50" width="50"
-                                    alt="">
+                                <img class="" src="{{ asset('images/python.png') }}" height="50"
+                                    width="50" alt="">
                             </div>
                         </div>
                         <div class="sm:ml-4">
@@ -154,16 +160,15 @@
                         </div>
                     </div>
                     <div class="flex justify-center">
-                    <img class="mt-2 rounded-lg border border-black"
-                        src="{{asset('images/evilscreen.png')}}"
-                        height="500" width="500" alt="">
+                        <img class="mt-2 rounded-lg border border-black" src="{{ asset('images/evilscreen.png') }}"
+                            height="500" width="500" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="sm:pb-0 pb-10"></div>
-    
+
 </body>
 
 </html>

@@ -28,35 +28,40 @@
     <header class="container mx-auto px-4 py-6 flex items-center justify-between  ">
         <div class="flex">
             <a href="/">
-            <img class="rounded-lg border-2 border-black" src="{{asset('images/ohnocringe.jpeg')}}" height="50" width="50" alt=""></a>
-              <a href="/" class="font-bold text-white text-xl mt-2 ml-2">LoutchoDev</a>
-            </div>
+                <img class="rounded-lg border-2 border-black" src="{{ asset('images/ohnocringe.jpeg') }}" height="50"
+                    width="50" alt=""></a>
+            <a href="/" class="font-bold text-white text-xl mt-2 ml-2">LoutchoDev</a>
+        </div>
         <nav>
             <ul class="flex items-center justify-center font-semibold mx-10">
                 <li class="relative sm:px-3 px-2 py-2">
                     <a href="/home">
-                        <div class="bg-white rounded-full border-2 border-white text-white p-3 bg-opacity-5 hover:border-green-400">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-3 bg-opacity-5 hover:border-green-400">
                             <span class="hover:opacity-50 hover:text-green-400">Home</span>
                         </div>
                     </a>
                 </li>
                 <li class="relative sm:px-3 px-2 py-2">
                     <a href="/todolist">
-                        <div class="bg-white rounded-full border-2 border-white text-white p-3 bg-opacity-5 hover:border-green-400">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-3 bg-opacity-5 hover:border-green-400">
                             <span class="hover:opacity-50 hover:text-green-400">Todolist</span>
                         </div>
                     </a>
                 </li>
                 <li class="relative sm:px-3 px-2 py-2">
                     <a href="/projects">
-                        <div class="bg-white rounded-full border-2 border-white text-white p-3 bg-opacity-5 hover:border-green-400">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-3 bg-opacity-5 hover:border-green-400">
                             <span class="hover:opacity-50 hover:text-green-400">Projects</span>
                         </div>
                     </a>
                 </li>
                 <li class="relative sm:px-3 px-2 py-2">
                     <a href="/about">
-                        <div class="bg-white rounded-full border-2 border-white text-white p-3 bg-opacity-5 hover:border-green-400">
+                        <div
+                            class="bg-white rounded-full border-2 border-white text-white p-3 bg-opacity-5 hover:border-green-400">
                             <span class="hover:opacity-50 hover:text-green-400">About</span>
                         </div>
                     </a>
@@ -79,7 +84,7 @@
                 <div class="inline-block mt-8">
                     <div class="mt-4">
                         <h1 class="font-bold text-5xl text-center textcolor">Register</h1>
-                        <form action="{{route('register')}}" method="POST">
+                        <form action="{{ route('register') }}" method="POST">
                             @csrf
                             <input
                                 class="block border-4 border-black bg-white rounded-lg p-2 font-semibold mt-8 text-black"
@@ -88,8 +93,8 @@
                                 class="block border-4 border-black bg-white mt-6 rounded-lg p-2 font-semibold text-black"
                                 type="password" placeholder="Password" name="password">
                             <div class="flex justify-center">
-                                <button
-                                    type="submit" class="block bg-white text-black font-semibold border-black border-4 rounded-full p-2 px-4 mt-6 hover:opacity-75">Register</button>
+                                <button type="submit"
+                                    class="block bg-white text-black font-semibold border-black border-4 rounded-full p-2 px-4 mt-6 hover:opacity-75">Register</button>
                             </div>
                         </form>
                         <div class="mb-14"></div>
