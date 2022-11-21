@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -30,29 +30,29 @@
             <ul class="flex items-center justify-center font-semibold mx-10">
               <li class="relative px-3 py-2">
                 <a href="/home">
-                <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5">
-                  <span class="hover:opacity-50 cursor-default hover:text-green-400">Home</span>
+                <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                  <span class="hover:opacity-50 hover:text-green-400">Home</span>
                 </div>
               </a>
               </li>
               <li class="relative px-3 py-2">
                 <a href="/todolist">
-                  <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5">
-                    <span class="hover:opacity-50 cursor-default hover:text-green-400">Todolist</span>
+                  <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                    <span class="hover:opacity-50 hover:text-green-400">Todolist</span>
                 </div>
                 </a>
               </li>
               <li class="relative px-3 py-2">
                 <a href="/projects">
-                <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5">
-                  <span class="hover:opacity-50 cursor-default hover:text-green-400">Projects</span>
+                <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                  <span class="hover:opacity-50 hover:text-green-400">Projects</span>
                 </div>
               </a>
               </li>
               <li class="relative px-3 py-2">
                 <a href="/about">
-                <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5 cursor-defaul">
-                  <span class="hover:opacity-50 cursor-default hover:text-green-400">About</span>
+                <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                  <span class="hover:opacity-50 hover:text-green-400">About</span>
                 </div>
               </a>
               </li>
@@ -82,9 +82,9 @@
                 <h1 class="font-semibold text-4xl text-center">Projects :</h1>
             </div>
             <div class="sm:flex sm:justify-between mt-1">
-                <div class="sm:border-2 border-y-2 border-b-2 border-gray-300 sm:rounded-lg mt-4 p-4">
+                <div class="sm:border-4 border-y-2 border-green-400 sm:rounded-lg mt-4 p-4">
                     <div class="flex justify-center">
-                        <h1 class="text-2xl font-semibold text-center mt-2">FaceitEloDoge</h1>
+                        <h1 class="text-2xl font-semibold text-center mt-2 hover:text-green-400">FaceitEloDoge</h1>
                         <a class="ml-1" href="https://github.com/loutchoo/FaceitEloDoge">
                             <img class="" src="{{ asset('images/github.png') }}" height="50" width="50"
                                 alt="">
@@ -92,21 +92,21 @@
                     </div>
                     <div class="flex justify-between font-semibold">
                         <div class="">
-                            <h1>Technology : Web</h1>
+                            <h1 class="hover:text-gray-300">Technology : Web</h1>
                             <div class="flex justify-center mt-1">
                                 <img class="" src="{{ asset('images/web2.png') }}" height="50" width="50"
                                     alt="">
                             </div>
                         </div>
                         <div class="ml-2">
-                            <h1>Language : PHP</h1>
+                            <h1 class="hover:text-blue-400">Language : PHP</h1>
                             <div class="flex justify-center mt-2">
                                 <img class="" src="{{ asset('images/php.webp') }}" height="50" width="50"
                                     alt="">
                             </div>
                         </div>
                         <div class="ml-2">
-                            <h1>Framework : Laravel</h1>
+                            <h1 class="hover:text-red-500">Framework : Laravel</h1>
                             <div class="flex justify-center">
                                 <img class="" src="{{ asset('images/laravel.png') }}" height="50"
                                     width="50" alt="">
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <div class="flex justify-center">
-                    <img class="mt-2"
+                    <img class="mt-2 rounded-lg border border-black"
                         src="{{asset('images/faceitelo2.png')}}"
                         height="500" width="500" alt="">
                     </div>
@@ -122,9 +122,9 @@
 
                 
 
-                <div class="sm:border-2 border-y-2 border-b-2 border-gray-300 sm:rounded-lg mt-4 p-4 sm:ml-10">
+                <div class="sm:border-4 border-b-2 border-green-400 sm:rounded-lg mt-4 p-4 sm:ml-10">
                     <div class="flex justify-center">
-                        <h1 class="text-2xl font-semibold text-center mt-2">Evilscreen</h1>
+                        <h1 class="text-2xl font-semibold text-center mt-2 hover:text-green-400">Evilscreen</h1>
                         <a class="ml-1" href="https://github.com/loutchoo/evilscreen">
                             <img class="" src="{{ asset('images/github.png') }}" height="50" width="50"
                                 alt="">
@@ -132,21 +132,21 @@
                     </div>
                     <div class="flex justify-between font-semibold">
                         <div>
-                            <h1>Technology : Software</h1>
+                            <h1 class="hover:text-gray-300">Technology : Software</h1>
                             <div class="flex justify-center">
                                 <img class="" src="{{ asset('images/software.png') }}" height="50" width="50"
                                     alt="">
                             </div>
                         </div>
                         <div class="ml-4">
-                            <h1>Language : Python</h1>
+                            <h1 class="hover:text-yellow-300">Language : Python</h1>
                             <div class="flex justify-center mt-1">
                                 <img class="" src="{{ asset('images/python.png') }}" height="50" width="50"
                                     alt="">
                             </div>
                         </div>
                         <div class="ml-4">
-                            <h1>Package : Tkinter</h1>
+                            <h1 class="hover:text-orange-600">Package : Tkinter</h1>
                             <div class="flex justify-center mt-1">
                                 <img class="" src="{{ asset('images/tkinter.png') }}" height="25"
                                     width="25" alt="">
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                     <div class="flex justify-center">
-                    <img class="mt-2"
+                    <img class="mt-2 rounded-lg border border-black"
                         src="{{asset('images/evilscreen.png')}}"
                         height="500" width="500" alt="">
                     </div>

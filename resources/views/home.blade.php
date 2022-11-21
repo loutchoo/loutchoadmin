@@ -28,29 +28,29 @@
           <ul class="flex items-center justify-center font-semibold mx-10">
             <li class="relative px-3 py-2">
               <a href="/home">
-              <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5">
-                <span class="hover:opacity-50 cursor-default hover:text-green-400">Home</span>
+              <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                <span class="hover:opacity-50 hover:text-green-400">Home</span>
               </div>
             </a>
             </li>
             <li class="relative px-3 py-2">
               <a href="/todolist">
-                <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5">
-                  <span class="hover:opacity-50 cursor-default hover:text-green-400">Todolist</span>
+                <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                  <span class="hover:opacity-50 hover:text-green-400">Todolist</span>
               </div>
               </a>
             </li>
             <li class="relative px-3 py-2">
               <a href="/projects">
-              <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5">
-                <span class="hover:opacity-50 cursor-default hover:text-green-400">Projects</span>
+              <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                <span class="hover:opacity-50 hover:text-green-400">Projects</span>
               </div>
             </a>
             </li>
             <li class="relative px-3 py-2">
               <a href="/about">
-              <div class="bg-white rounded-full text-white p-2 sm:p-3 bg-opacity-5 cursor-defaul">
-                <span class="hover:opacity-50 cursor-default hover:text-green-400">About</span>
+              <div class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                <span class="hover:opacity-50 hover:text-green-400">About</span>
               </div>
             </a>
             </li>
@@ -77,8 +77,8 @@
     
     <div class="w-full mt-6 sm:mt-20 animate__animated animate__bounceInDown">
       <div class="text-2xl flex-justify-center">
-        <h1 class="text-center textcolor font-bold sm:text-6xl">Loutcho_Q - Louis</h1>
-        <h1 class="text-center font-semibold mt-2 text-4xl">Future developper</h1>
+        <h1 class="text-center textcolor font-bold text-4xl sm:text-6xl">Loutcho_Q - Louis</h1>
+        <h1 class="text-center font-semibold mt-2 text-3xl">Future developper</h1>
         <div class="sm:mx-96">
           <h1 class="text-center font-semibold mt-2 sm:text-lg mx-10 sm:mx-0">Passionated of creating new stuff, i wanna live a better life with coding, meet people and work on big projects to be the future.</h1>
         </div>
