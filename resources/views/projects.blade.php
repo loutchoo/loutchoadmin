@@ -48,8 +48,8 @@
                 <li class="relative sm:px-3 px-2 py-2">
                     <a href="/projects">
                         <div
-                            class="bg-white rounded-full border-2 border-white text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
-                            <span class="hover:opacity-50 hover:text-green-400">Projects</span>
+                            class="bg-white rounded-full border-2 border-green-400 text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
+                            <span class="hover:opacity-50 hover:text-green-400 text-green-400">Projects</span>
                         </div>
                     </a>
                 </li>
