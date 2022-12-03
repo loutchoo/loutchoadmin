@@ -49,7 +49,7 @@
                     <a href="/projects">
                         <div
                             class="bg-white rounded-full border-2 border-green-400 text-white p-2 sm:p-3 bg-opacity-5 hover:border-green-400">
-                            <span class="hover:opacity-50 hover:text-green-400 text-green-400">Projects</span>
+                            <span class="hover:opacity-50 hover:text-green-400">Projects</span>
                         </div>
                     </a>
                 </li>
